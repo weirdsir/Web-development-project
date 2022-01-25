@@ -1,0 +1,60 @@
+.navbar{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px !important;
+}
+.c_header {
+    background-color: #e4542d;
+}
+.footer {
+    font-family: 'Lato', sans-serif;
+    background-color: #e4542d;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    
+}
+img {margin-left:auto;
+    display: block;
+    margin-right: auto;
+    border-radius: 40%;
+    margin-top: 0px;}
+
+p {background-color: #e4542d;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 40px;
+   } 
+
+    .button4 {font-size: 30px;
+        margin-left: 190px;
+        background-color: #FC9642;
+        text-transform: uppercase;
+        border-radius: 10%;
+        font-family: 'Lato', sans-serif;}
+    .button5 {font-size: 30px;
+        margin-left: 190px;
+        background-color: #FC9642;
+        text-transform: uppercase;
+        border-radius: 10%;
+        font-family: 'Lato', sans-serif;}
+    .button6 {font-size: 30px;
+            margin-left: 190px;
+            background-color: #FC9642;
+            text-transform: uppercase;
+            border-radius: 10%;
+            font-family: 'Lato', sans-serif;;
+            }
+    .contact{font-family: 'Lato', sans-serif;;
+            font-size: larger;
+            margin-left: 40px;}
+    .button:hover{
+            color: rgb(214, 214, 214);
+          }
+
