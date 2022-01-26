@@ -1,10 +1,15 @@
+html{background-color: #FFF0E3;}
+
+
 .navbar{
     font-family: 'Lato', sans-serif;
     font-size: 20px !important;
+    align-self: center;
 }
 .c_header {
     background-color: #e4542d;
 }
+
 .footer {
     font-family: 'Lato', sans-serif;
     background-color: #e4542d;
@@ -19,7 +24,31 @@ img {margin-left:auto;
     display: block;
     margin-right: auto;
     border-radius: 40%;
-    margin-top: 0px;}
+    margin-top: 2ch;
+    margin-bottom: 2ch;}
+
+.category {
+  margin-top: 5ch;}
+
+.ppl {
+  margin-top: 5ch;
+  margin-bottom: 10ch;
+  border-radius: 0%;
+}
+
+.recipepic {
+  margin-top: 5ch;
+  border-radius: 0%;
+}
+
+.title{
+  font-family: 'Lato', sans-serif;
+    font-size: 30px !important;
+}
+
+.maintext{
+  margin-top: 5ch;
+}
 
 p {background-color: #e4542d;
     font-family: 'Lato', sans-serif;
@@ -30,31 +59,55 @@ p {background-color: #e4542d;
     height: 70px;
     padding-left: 10px;
     padding-top: 40px;
-   } 
+   }
 
-    .button4 {font-size: 30px;
-        margin-left: 190px;
-        background-color: #FC9642;
-        text-transform: uppercase;
-        border-radius: 10%;
-        font-family: 'Lato', sans-serif;}
-    .button5 {font-size: 30px;
-        margin-left: 190px;
-        background-color: #FC9642;
-        text-transform: uppercase;
-        border-radius: 10%;
-        font-family: 'Lato', sans-serif;}
-    .button6 {font-size: 30px;
-            margin-left: 190px;
-            background-color: #FC9642;
-            text-transform: uppercase;
-            border-radius: 10%;
-            font-family: 'Lato', sans-serif;;
-            }
-    .contact{font-family: 'Lato', sans-serif;;
-            font-size: larger;
-            margin-left: 40px;}
-    .button:hover{
-            color: rgb(214, 214, 214);
-          }
+  .p1{
+    color: black;}
 
+  .buttonrecipe { 
+    color: #000000; 
+    background-color: #FC9642; 
+    border-color: #FC9642;
+    text-transform: uppercase;
+    border-radius: 10%; 
+  } 
+   
+  .buttonrecipe:hover, 
+  .buttonrecipe:focus, 
+  .buttonrecipe:active, 
+  .buttonrecipe.active, 
+  .open .dropdown-toggle.buttonrecipe { 
+    color: #000000; 
+    background-color: #F5A767; 
+    border-color: #FC9642; 
+  } 
+   
+  .buttonrecipe:active, 
+  .buttonrecipe.active, 
+  .open .dropdown-toggle.buttonrecipe { 
+    background-image: none; 
+  } 
+   
+  .buttonrecipe.disabled, 
+  .buttonrecipe[disabled], 
+  fieldset[disabled] .buttonrecipe, 
+  .buttonrecipe.disabled:hover, 
+  .buttonrecipe[disabled]:hover, 
+  fieldset[disabled] .buttonrecipe:hover, 
+  .buttonrecipe.disabled:focus, 
+  .buttonrecipe[disabled]:focus, 
+  fieldset[disabled] .buttonrecipe:focus, 
+  .buttonrecipe.disabled:active, 
+  .buttonrecipe[disabled]:active, 
+  fieldset[disabled] .buttonrecipe:active, 
+  .buttonrecipe.disabled.active, 
+  .buttonrecipe[disabled].active, 
+  fieldset[disabled] .buttonrecipe.active { 
+    background-color: #FC9642; 
+    border-color: #FC9642; 
+  } 
+   
+  .buttonrecipe .badge { 
+    color: #FC9642; 
+    background-color: #000000; 
+  }
