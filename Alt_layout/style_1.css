@@ -53,6 +53,13 @@ p {background-color: #e4542d;
   .p1{
     color: black;}
 
+.p2{
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 20px !important;
+
+}
+
   .buttonrecipe { 
     color: #000000; 
     background-color: #FC9642; 
