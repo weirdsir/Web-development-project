@@ -28,7 +28,7 @@ img {margin-left:auto;
 .title{
     font-family: 'Patrick Hand', cursive;
     font-size: 30px !important;
-    margin-left: 1.5ch;
+    margin-left: 3.5ch;
 }
 
 .maintext{
@@ -55,7 +55,8 @@ p {background-color: #e4542d;
   font-family: 'Patrick Hand', cursive;
   color: black;
   font-size: 20px !important;
-  margin-left: 2.5ch;
+  margin-left: 5.5ch;
+  padding-top: 3ch;
 
 }
 
