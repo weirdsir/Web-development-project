@@ -1,0 +1,124 @@
+html{background-color: #FFF0E3;}
+
+.c_header {
+    background-color: #e4542d;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.footer {
+    font-family: 'Patrick Hand', cursive;
+    background-color: #e4542d;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    
+}
+img {margin-left:auto;
+    display: block ;
+    margin-right: auto;
+    border-radius: 40%;
+    margin-top: 2ch;
+    margin-bottom: 2ch;
+    }
+
+.category {
+  margin-top: 5ch;}
+
+.title{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px !important;
+    margin-left: 5ch;
+}
+
+.maintext{
+  font-family: 'Patrick Hand', cursive;
+  margin-top: 35px;
+  font-size: large;
+  margin-bottom: 100px;
+}
+
+p {background-color: #e4542d;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 40px;
+   }
+
+  .p1{
+    color: black;}
+
+.p2{
+  font-family: 'Patrick Hand', cursive;
+  color: black;
+  font-size: 20px !important;
+  
+  
+
+}
+
+  .buttonrecipe { 
+    color: #000000; 
+    background-color: #FC9642; 
+    border-color: #FC9642;
+    text-transform: uppercase;
+    font-family: 'Patrick Hand', cursive;
+    border-radius: 10%; 
+  } 
+   
+  .buttonrecipe:hover, 
+  .buttonrecipe:focus, 
+  .buttonrecipe:active, 
+  .buttonrecipe.active, 
+  .open .dropdown-toggle.buttonrecipe { 
+    color: #000000; 
+    background-color: #F5A767; 
+    border-color: #FC9642; 
+  } 
+   
+  .buttonrecipe:active, 
+  .buttonrecipe.active, 
+  .open .dropdown-toggle.buttonrecipe { 
+    background-image: none; 
+  } 
+   
+  .buttonrecipe.disabled, 
+  .buttonrecipe[disabled], 
+  fieldset[disabled] .buttonrecipe, 
+  .buttonrecipe.disabled:hover, 
+  .buttonrecipe[disabled]:hover, 
+  fieldset[disabled] .buttonrecipe:hover, 
+  .buttonrecipe.disabled:focus, 
+  .buttonrecipe[disabled]:focus, 
+  fieldset[disabled] .buttonrecipe:focus, 
+  .buttonrecipe.disabled:active, 
+  .buttonrecipe[disabled]:active, 
+  fieldset[disabled] .buttonrecipe:active, 
+  .buttonrecipe.disabled.active, 
+  .buttonrecipe[disabled].active, 
+  fieldset[disabled] .buttonrecipe.active { 
+    background-color: #FC9642; 
+    border-color: #FC9642; 
+  } 
+   
+  .buttonrecipe .badge { 
+    color: #FC9642; 
+    background-color: #000000; 
+  }
+  a {
+    display: inline-block;
+  line-height: 1em;
+  overflow: hidden;
+  
+  }
+  @media (max-width: 1200px){
+    header br{
+      display: none;
+
+    }
+  }
