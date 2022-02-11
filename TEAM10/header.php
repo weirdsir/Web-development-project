@@ -43,7 +43,7 @@
                         <br>
                         <button class="btn btn-outline-light" type="submit">Search</button>
                         <input type="button" class="btn" style="color: white; font-family: 'Patrick Hand', cursive;
-                    font-size: 20px !important; " onclick="location.href='register.php';" value="sign up"  />
+                    font-size: 20px !important; " onclick="location.href='form.php';" value="sign up"  />
                    
                     </div>
                 </div>    

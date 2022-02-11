@@ -1,19 +1,50 @@
-<?php include 'header.php';?>
+<?php include 'header.php';
 
-<div id="users" style="text-align: center; margin: auto; width: 500px; padding: 150px; ">
-    <form action="do-register.php" method="post">
-        <input type="text" name="username" placeholder="Username..."> <br>
-        <input type="text" name="email" placeholder="Email..."><br>
-        <input type="password" name="passwords" placeholder="Password..."><br>
-        <input type="password" name="password_conf" placeholder="Repeat password..."><br>
-        <input type="submit" name="do-register" value="Register"><br>
-        
-    </form>
 
-</div>
+ include 'db.php' ; 
+
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+$password_conf = $_POST['password_conf'];
+
+
+if (empty($_POST['username'])) {
+    echo "<h1>Please input username</h1>";
+}
+if (empty($_POST['email'])) {
+    echo "<h1>Please input email</h1>";
+} 
+if (empty($_POST['password'])) {
+    echo "<h1>Please input password</h1>";
+}
+if (empty($_POST['password_conf'])) {
+    echo "<h1>Please input password</h1>";
+}
+    else {
+$sql="insert into user_accounts (username, email, password)
+values('$username', '$email', '$password')";
+
+if($conn->query($sql) === TRUE) {
+    echo "Congratulations! Account Created.";
+    
+}
+else
+{
+    echo "ERROR: " .$sql. "<br>" . $conn->error;
+}
+$conn->close();
+
+} 
+?>
+
+<?php
+include 'footer.php';
+?>
+
+
 
 
 
 
     
-<?php include 'footer.php';?>

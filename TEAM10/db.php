@@ -1,13 +1,13 @@
 <?php
 $servername="db";
-$username="younesPHP";
-$password="Yk206508";
-$dbname ="younesPHP";
-// creating connection 
+$username="TEAM10";
+$password="team10";
+$dbname ="TEAM10";
+ 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: ".$conn->connect_error); }
-    echo "connected successfully";
+    echo "connected successfully"."<br>";
 ?>
