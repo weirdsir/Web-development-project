@@ -6,7 +6,9 @@
 // It also will help you to practice utlizing GitHub in project work
 
 # 1. Create/read a text file by using approprite php functions 
+    $newfile = fopen('file.txt','r') or die ("Failed to create a file");
     # Step 1: check if file exists or not
+    
     # Step 2: Open the file using appropriate mode. (each member opens the file in different mode)
     # Step 3: Use fwrite/fread function to write/read on the file your team name and members name. 
     # Step 4: Close the file 
