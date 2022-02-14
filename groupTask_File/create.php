@@ -1,7 +1,7 @@
 <?php
 # 1. Create/read a text file by using approprite php functions 
 echo "<hr><h2>Creating a file </h2>";
-$newfile = fopen('file.txt','w') or die ("Failed to create a file");
+$newfile = fopen('file.txt','x+') or die ("Failed to create a file");
 $txt = "Hello world this is interesting. <br>";
 fwrite($newfile, $txt);
 fclose($newfile);
