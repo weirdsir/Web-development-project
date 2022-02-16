@@ -26,6 +26,23 @@ include 'header.php';
           Sed eu turpis dolor. Morbi nisi felis, pretium et interdum ac, 
           aliquam a leo. Vestibulum sed lacinia lectus.
           Maecenas bibendum odio eu odio luctus facilisis.</div>
+          <h2>Changing Font Color </h2>
+          <form action = "">
+              <label>
+                Font color: 
+                <input type = "color"  name = "foreground" size = "10"
+                      onchange = "setColor('foreground', this.value)" />
+              </label>
+              <br />
+          </form>
+          <script>
+            function setColor(where, newColor) {
+            if (where == "background")
+              document.body.style.backgroundColor = newColor;
+            else
+              document.body.style.color = newColor;
+            }
+         </script>
         </div>
       </div>
     </div>
