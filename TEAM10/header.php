@@ -30,20 +30,23 @@
                       <img src="PICTURES/recipe.jpg" class="img-fluid" alt="logo" width= 150 ></a>
                     </div>
                     <div class="col-xl-3 border-show">
-                      <form class="form-inline my-2 my-lg-0"></form>
+                      <form  action="search_result.php" method="post" class="form-inline my-2 my-lg-0">
                           <br>
                           <br>
                           
-                           <input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type = "text" id = "searchBar" oninput = "Search((this.value).toLowerCase())">
+                           <input class="form-control mr-sm-2" placeholder="Search" name= "query" aria-label="Search" type = "text" id = "searchBar" oninput = "Search((this.value).toLowerCase())">
                     
                         </div>
                 
                         <div class="col-xl-1 border-show">
                         <br>
                         <br>
-                        <button class="btn btn-outline-light" type="submit">Search</button>
+                        <input type="submit" class="btn btn-outline-light" name="do-search" value= "Search"> </form>
+                        
                         <input type="button" class="btn" style="color: white; font-family: 'Patrick Hand', cursive;
                     font-size: 20px !important; " onclick="location.href='form.php';" value="sign up"  />
+                    <input type="button" class="btn" style="color: white; font-family: 'Patrick Hand', cursive;
+                    font-size: 20px !important; " onclick="location.href='login.php';" value="sign in"  />
                    
                     </div>
                 </div>    
