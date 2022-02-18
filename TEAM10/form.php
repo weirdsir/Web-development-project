@@ -2,7 +2,7 @@
   include 'header.php';
 ?>
 
-<div id="users" style="text-align: center; margin: auto; width: 500px; padding: 150px; ">
+<div id="users" style="text-align: center; margin: auto; width: 500px; padding: 50px;">
  <form action="register.php" method="post">
      <input type="text" name="username" placeholder="Username..."> <br>
      <input type="text" name="email" placeholder="Email..."><br>
