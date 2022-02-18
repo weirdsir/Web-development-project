@@ -1,4 +1,6 @@
-<?php include "header.php";?>
+<?php include "header.php";
+      ?>
+
 <div id="users2" style="text-align: center; margin: auto; width: 500px; padding: 50px;">
  <form action="do-login.php" method="post">
     <input type="text" name="username" placeholder="Username..."><br>

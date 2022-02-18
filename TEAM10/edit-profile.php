@@ -1,6 +1,8 @@
 <?php
 include 'header.php';
 include 'db.php';
+
+
 $a = $_GET['id'];
 $result = mysqli_query($conn,"SELECT * FROM user_accounts WHERE id= '$a'");
 $row= mysqli_fetch_array($result);
@@ -33,14 +35,14 @@ if(isset($_POST['submit'])){
     $query = mysqli_query($conn,"UPDATE user_accounts set username='$username' where id='$a'");
     $email = $_POST['email'];
     $query = mysqli_query($conn,"UPDATE user_accounts set email='$email' where id='$a'");
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
     $query = mysqli_query($conn,"UPDATE user_accounts set password='$password' where id='$a'");
    
 
     if($query){
         echo "Successfully Updated <br>";
-        echo "<a href='profile.php'> View changes </a>";
-        #header("location: update.php");
+        echo "<a href='profile.php' > View changes </a>";
+        
     }
     else { echo "Not Updated";}
 }

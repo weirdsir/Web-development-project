@@ -2,6 +2,7 @@
 <?php
 include 'header.php';
 require 'db.php'; 
+
 $sql = "select * from user_accounts";
 $result = $conn->query($sql);?>
 <table class="table">
