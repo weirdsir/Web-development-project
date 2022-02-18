@@ -1,13 +1,21 @@
-<?php include 'header.php';
-
-
+<?php 
+ include 'header.php';
  include 'db.php' ; 
-
+ 
+$first_name = $_POST['first_name'];
+$last_name = $_POST['last_name'];
 $username = $_POST['username'];
 $email = $_POST['email'];
-$password = $_POST['password'];
-$password_conf = $_POST['password_conf'];
+// Encrypted password with md5() function.
+$password = md5($_POST['password']);
+$password_conf = md5($_POST['password_conf']);
 
+if (empty($_POST['first_name'])) {
+    echo "<h1>Please input First name</h1>";
+}
+if (empty($_POST['last_name'])) {
+    echo "<h1>Please input Last name</h1>";
+}
 
 if (empty($_POST['username'])) {
     echo "<h1>Please input username</h1>";
@@ -15,18 +23,22 @@ if (empty($_POST['username'])) {
 if (empty($_POST['email'])) {
     echo "<h1>Please input email</h1>";
 } 
-if (empty($_POST['password'])) {
+if (empty(md5($_POST['password']))) {
     echo "<h1>Please input password</h1>";
 }
-if (empty($_POST['password_conf'])) {
+if (empty(md5($_POST['password_conf']))) {
     echo "<h1>Please input password</h1>";
 }
     else {
-$sql="insert into user_accounts (username, email, password)
-values('$username', '$email', '$password')";
+$sql="insert into user_accounts (first_name, last_name, username, email, password)
+values('$first_name','$last_name','$username','$email','$password')";
 
 if($conn->query($sql) === TRUE) {
     echo "Congratulations! Account Created.";
+
+    echo " <br><form action='login.php' method=''>
+    <input type='submit' name='do-login' style=' width: 10%;' value='Sign in'> </form>";
+   
     
 }
 else
