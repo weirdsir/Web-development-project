@@ -156,3 +156,23 @@ p {background-color: #e4542d;
 
     }
   }
+
+  .message {
+    width: 400px;
+    height: 80px;
+    background-color: #fff;
+    resize: none;
+    
+  }
+  
+  input[type=submit1] {
+    width: 100px;
+    height: 30px;
+    background-color: #FC9642;
+    border: none;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+  
+  }
