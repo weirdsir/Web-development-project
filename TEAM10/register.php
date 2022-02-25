@@ -13,20 +13,20 @@ $password_conf = md5($_POST['password_conf']);
 if (empty($_POST['first_name'])) {
     echo "<h1>Please input First name</h1>";
 }
-if (empty($_POST['last_name'])) {
+elseif (empty($_POST['last_name'])) {
     echo "<h1>Please input Last name</h1>";
 }
 
-if (empty($_POST['username'])) {
+elseif (empty($_POST['username'])) {
     echo "<h1>Please input username</h1>";
 }
-if (empty($_POST['email'])) {
+elseif (empty($_POST['email'])) {
     echo "<h1>Please input email</h1>";
 } 
-if (empty(md5($_POST['password']))) {
+elseif (empty(md5($_POST['password']))) {
     echo "<h1>Please input password</h1>";
 }
-if (empty(md5($_POST['password_conf']))) {
+elseif (empty(md5($_POST['password_conf']))) {
     echo "<h1>Please input password</h1>";
 }
     else {
