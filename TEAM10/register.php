@@ -11,6 +11,9 @@ $email = $_POST['email'];
 $password = md5($_POST['password']);
 $password_conf = md5($_POST['password_conf']);
 
+if ($password === $password_conf ) {
+   
+
 $sql="insert into user_accounts (first_name, last_name, username, email, password)
 values('$first_name','$last_name','$username','$email','$password')";
 
@@ -20,12 +23,17 @@ if($conn->query($sql) === TRUE) {
     echo " <br><form action='login.php' method=''>
     <input type='submit' name='do-login' style=' width: 10%;' value='Sign in'> </form>";
    
-    
-}
+}   
+
 else
 {
     echo "ERROR: " .$sql. "<br>" . $conn->error;
 }
+}
+else {
+    echo "The passwords are not the same";
+}
+
 $conn->close();
 
 ?>
