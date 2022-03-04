@@ -1,8 +1,12 @@
 <?php
 include 'header.php';
 include 'db.php';
-
-
+session_start();
+if(isset($_SESSION['username'])){
+    echo "user: ".$_SESSION['username']; echo " <form action='logout.php' method=''>
+    <input type='submit' name='logout' style=' width: 10%;' value='sign out'> </form>
+    <form action='profile.php' method=''>
+     <input type='submit' name='profile' style=' width: 10%;' value='Edit profile'> </form>"; }
 $a = $_GET['id'];
 $result = mysqli_query($conn,"SELECT * FROM user_accounts WHERE id= '$a'");
 $row= mysqli_fetch_array($result);
@@ -18,7 +22,7 @@ $row= mysqli_fetch_array($result);
      <input type="text" name="first_name" placeholder="<?php echo $row['first_name']; ?>"> <br>
      <input type="text" name="last_name" placeholder="<?php echo $row['last_name']; ?>"> <br>
      <input type="text" name="username" placeholder="<?php echo $row['username']; ?>"> <br>
-     <input type="text" name="email" placeholder="<?php echo $row['email']; ?>"><br>
+     <input type="email" name="email" placeholder="<?php echo $row['email']; ?>"><br>
      <input type="password" name="password" placeholder="<?php echo $row['password']; ?>"><br>
      <input type="submit" name="submit" value="update"><br>
  </form>

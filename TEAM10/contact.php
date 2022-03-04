@@ -1,6 +1,12 @@
 <?php
+session_start();
   include 'header.php';
   include 'db.php';
+  if(isset($_SESSION['username'])){
+    echo "user: ".$_SESSION['username']; echo " <form action='logout.php' method=''>
+    <input type='submit' name='logout' style=' width: 10%;' value='sign out'> </form>
+    <form action='profile.php' method=''>
+     <input type='submit' name='profile' style=' width: 10%;' value='Edit profile'> </form>"; }
   try {
     
   } catch (exception $exc) {
@@ -21,7 +27,7 @@
 }
 ?>
 
-<div class="title"><br>CONTACT US/FEEDBACK</div></div>
+<div class="title">CONTACT US/FEEDBACK</div></div>
     <div class="container-fluid" style="background-color: #FFF0E3;">
         <div class="p2">Tel: +358 446584125<br>
         Email: info@recipe.com<br><br></div>

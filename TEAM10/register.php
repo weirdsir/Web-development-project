@@ -1,4 +1,5 @@
-<?php 
+<?php
+session_start();
  include 'header.php';
  include 'db.php' ; 
  
@@ -10,24 +11,21 @@ $email = $_POST['email'];
 $password = md5($_POST['password']);
 $password_conf = md5($_POST['password_conf']);
 
-if (empty($_POST['first_name'])) {
-    echo "<h1>Please input First name</h1>";
+if (empty($_POST['username'])) {
+    echo "<h2>Please input username</h2>";  
 }
-elseif (empty($_POST['last_name'])) {
-    echo "<h1>Please input Last name</h1>";
-}
-
-elseif (empty($_POST['username'])) {
-    echo "<h1>Please input username</h1>";
-}
+//Username validation
+elseif (!preg_match("/^[a-zA-Z-' ]*$/",$username)) {
+    echo "<h2>Only letters and white space allowed</h2>";
+  }
 elseif (empty($_POST['email'])) {
-    echo "<h1>Please input email</h1>";
+    echo "<h2>Please input email</h2>";
 } 
-elseif (empty(md5($_POST['password']))) {
-    echo "<h1>Please input password</h1>";
+elseif (empty($_POST['password'])) {
+    echo "<h2>Please input password</h2>";
 }
-elseif (empty(md5($_POST['password_conf']))) {
-    echo "<h1>Please input password</h1>";
+elseif (empty($_POST['password_conf'])) {
+    echo "<h2>Please repeat password</h2>";
 }
     else {
 $sql="insert into user_accounts (first_name, last_name, username, email, password)
@@ -48,6 +46,8 @@ else
 $conn->close();
 
 } 
+
+
 ?>
 
 <?php

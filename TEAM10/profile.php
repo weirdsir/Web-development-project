@@ -1,10 +1,13 @@
-
 <?php
+session_start();
 include 'header.php';
-require 'db.php'; 
-
+require 'db.php';
+if(isset($_SESSION['username'])){
+    echo "user: ".$_SESSION['username']; echo " <form action='logout.php' method=''>
+    <input type='submit' name='logout' style=' width: 10%;' value='sign out'> </form>"; }
 $sql = "select * from user_accounts";
-$result = $conn->query($sql);?>
+$result = $conn->query($sql);
+?>
 <table class="table">
 <tr>
 <th>ID</th><th>First Name</th><th>Last Name</th>
