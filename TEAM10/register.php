@@ -11,6 +11,12 @@ $email = $_POST['email'];
 $password = md5($_POST['password']);
 $password_conf = md5($_POST['password_conf']);
 
+$checkEmail="SELECT * FROM `user_accounts` WHERE email='$email' OR username='$username'";
+
+$result = $conn->query($checkEmail);
+$row_cnt = $result->num_rows;
+if ($row_cnt < 1) {
+
 if ($password === $password_conf ) {
    
 
@@ -31,7 +37,11 @@ else
 }
 }
 else {
-    echo "The passwords are not the same";
+    echo "The passwords are not same";
+}
+}
+else {
+    echo "username or email has already registered!";
 }
 
 $conn->close();

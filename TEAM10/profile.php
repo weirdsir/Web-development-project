@@ -2,10 +2,18 @@
 session_start();
 include 'header.php';
 require 'db.php';
+
 if(isset($_SESSION['username'])){
     echo "user: ".$_SESSION['username']; echo " <form action='logout.php' method=''>
     <input type='submit' name='logout' style=' width: 10%;' value='sign out'> </form>"; }
-$sql = "select * from user_accounts";
+  $account = $_SESSION['username'];  
+  if ($account == 'admin') {
+    $sql = "SELECT * FROM `user_accounts`";
+  }
+  else {
+    $sql = "SELECT * FROM `user_accounts` WHERE username = '$account'";
+  }
+
 $result = $conn->query($sql);
 ?>
 <table class="table">
