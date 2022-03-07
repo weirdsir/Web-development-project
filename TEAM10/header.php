@@ -24,6 +24,8 @@
                     font-size: 20px !important; " onclick="location.href='recipes.php';" value="RECIPES" />
                     <input type="button" class="btn" style="color: white; font-family: 'Patrick Hand', cursive;
                     font-size: 20px !important; " onclick="location.href='contact.php';" value="CONTACT" />
+                    <input type="button" class="btn" style="color: white; font-family: 'Patrick Hand', cursive;
+                    font-size: 20px !important; " onclick="location.href='newsletter.php';" value="NEWSLETTER" />
                     </div>
                     <div class="col-xl-4 border-show">
                       <a href="index.php">
