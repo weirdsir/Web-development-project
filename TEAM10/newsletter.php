@@ -1,6 +1,12 @@
 <?php
+  session_start();
   include 'header.php';
   include 'db.php';
+  if(isset($_SESSION['username'])){
+    echo "user: ".$_SESSION['username']; echo " <form action='logout.php' method=''>
+    <input type='submit' name='logout' style=' width: 10%;' value='sign out'> </form>
+    <form action='profile.php' method=''>
+     <input type='submit' name='profile' style=' width: 10%;' value='Edit profile'> </form>"; }
 ?>
 
 
