@@ -5,7 +5,9 @@ require 'db.php';
 
 if(isset($_SESSION['username'])){
     echo "user: ".$_SESSION['username']; echo " <form action='logout.php' method=''>
-    <input type='submit' name='logout' style=' width: 10%;' value='sign out'> </form>"; }
+    <input type='submit' name='logout' style=' width: 10%;' value='sign out'> </form>
+    <form action='post_create.php' method=''>
+    <input type='submit' name='profile' style=' width: 10%;' value='Add a post'> </form>"; }
   $account = $_SESSION['username'];  
   if ($account == 'admin') {
     $sql = "SELECT * FROM `user_accounts`";

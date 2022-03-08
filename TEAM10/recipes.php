@@ -5,7 +5,9 @@ session_start();
       echo "user: ".$_SESSION['username']; echo " <form action='logout.php' method=''>
       <input type='submit' name='logout' style=' width: 10%;' value='sign out'> </form>
       <form action='profile.php' method=''>
-       <input type='submit' name='profile' style=' width: 10%;' value='Edit profile'> </form>"; }
+       <input type='submit' name='profile' style=' width: 10%;' value='Edit profile'> </form>
+       <form action='post_create.php' method=''>
+     <input type='submit' name='profile' style=' width: 10%;' value='Add a post'> </form>"; }
 ?>
 
         <div class="row">
