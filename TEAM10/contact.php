@@ -31,7 +31,7 @@ session_start();
     <div class="container-fluid" style="background-color: #FFF0E3;">
         <div class="p2">Tel: +358 446584125<br>
         Email: info@recipe.com<br><br></div>
-        <form method="post" action="contactform.php" >
+        <form method="post" action="contactform.php" style="padding-bottom: 100px;">
           <input type="text1" name="name" placeholder="Full name"><br><br>
           <input type="text1" name="mail" placeholder="Email"><br><br>
           <input type="text1" name="subject" placeholder="Subject"><br><br>
